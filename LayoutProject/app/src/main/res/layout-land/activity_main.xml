@@ -24,13 +24,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="332dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox4"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5"
         app:srcCompat="@drawable/smileyface"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="284dp" />
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox1"
@@ -38,10 +40,10 @@
         android:layout_height="wrap_content"
         android:text="Check Box 1"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.498"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="130dp" />
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox2"
@@ -61,32 +63,36 @@
         android:layout_height="wrap_content"
         android:text="Check Box 3"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/checkBox6"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.501"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="411dp" />
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginEnd="27dp"
         android:text="CheckBox 4"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="133dp" />
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
         android:text="Check Box 5"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="264dp" />
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox6"
@@ -103,28 +109,33 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="22dp"
         android:text="Button 1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="111dp" />
+        app:layout_constraintBottom_toTopOf="@+id/checkBox1"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox1"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
         android:text="Button 2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="111dp" />
+        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox2"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="23dp"
         android:text="Button 3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="479dp"
-        tools:layout_editor_absoluteY="111dp" />
+        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+        app:layout_constraintStart_toStartOf="@+id/checkBox3"
+        tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
